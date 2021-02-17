@@ -1,9 +1,9 @@
-$ui-base-color: #28305e; // darkest
-$ui-highlight-color: #3f2e62; // vibrant
+$ui-base-color: #261f31; // darkest
+$ui-highlight-color: #6995a3; // vibrant
 $ui-secondary-color: #b9b9ba; // lightest
 $ui-primary-color: #b9b9ba; // lighter
-$ui-primary-color-alt: #b49cac; // darker, for external pages
-$ui-link-text-color: #779eaa;
+$ui-primary-color-alt: #3d5a7a; // darker, for external pages
+$ui-link-text-color: #88aea4;
 
 $about-page-text: lighten($ui-base-color, 50%);
 
@@ -319,4 +319,10 @@ body, .landing-page, .public-layout {
 
 .account__section-headline {
   background-color: rgba(17,17,17,0.9);
+}
+
+.reply-indicator {
+    min-height: 30px;
+    max-height: 200px;
+    background: #88aea4;
 }
