@@ -342,9 +342,10 @@ body, .landing-page, .public-layout {
     background: transparent;
 } // make tabs bar background invisible
 
-@media screen and (min-width: 631px)
-.tabs-bar__link:active, .tabs-bar__link:focus, .tabs-bar__link:hover {
-    background: transparent;
+@media screen and (min-width: 631px) {
+  .tabs-bar__link:active, .tabs-bar__link:focus, .tabs-bar__link:hover {
+      background: transparent;
+  }
 }
 
 .tabs-bar__link.active {
