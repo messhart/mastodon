@@ -1,7 +1,7 @@
-$ui-base-color: #0a080b; // darkest
+$ui-base-color: #272033; // darkest
 $ui-highlight-color: #6995a3; // vibrant
 $ui-secondary-color: #b9b9ba; // lightest
-$ui-primary-color: #b9b9ba; // lighter
+$ui-primary-color: #82a4ae; // lighter
 $ui-primary-color-alt: #3d5a7a; // darker, for external pages
 $ui-link-text-color: #88aea4;
 
@@ -349,6 +349,8 @@ body, .landing-page, .public-layout {
 }
 
 .tabs-bar__link.active {
+    border-bottom: 0px;
+    color: #ffffff;
     text-shadow: 0 0 10px #bef4ff, 0 0 20px #bef4ff, 0 0 30px #bef4ff, 0 0 40px #bef4ff;
 } // text glow when chosen 
 
@@ -411,6 +413,10 @@ body, .landing-page, .public-layout {
     background: transparent;
 } // background set to transparent
 
+.compose-form .compose-form__modifiers .compose-form__uploads-wrapper {
+    padding: 0px;
+} // cancel padding
+
 .compose-form .autosuggest-textarea__textarea {
     min-height: 100px;
     border-radius: 4px 4px 0 0;
@@ -459,5 +465,98 @@ body, .landing-page, .public-layout {
     margin: 0;
     color: white;
     background: rgba(0,0,0,0.7);
-    border: 2px dotted #ac3f49;
 } // cw
+
+/* avatar */
+a .account__avatar {
+    cursor: pointer;
+    border-left: 2px dashed #fdff9e;
+    border-right: 2px dashed #b36da6;
+    border-bottom: 2px dashed #ac3f49;
+    border-top: 2px dashed #6a9aa3;
+} // colorful avatar border
+
+.account__header__image {
+    overflow: hidden;
+    height: 145px;
+    position: relative;
+    background: transparent;
+} // header default = transparent
+
+.account__header__bar {
+    position: relative;
+    background: rgba(0,0,0,0.3);
+    padding: 5px;
+    border-bottom: 1px dashed #a0578d;
+} // header bar color setting overall & the last blue dashed line
+
+.account__header__fields {
+    border-top: 1px dashed #bfc357;
+    border-bottom: 1px dashed #bfc357;
+} // yellow dashed line before & after the table
+
+.account__header__fields dl {
+    border-bottom: 1px dashed #618f97;
+} // blue dashed line inside the table
+
+/* getting started */
+.flex-spacer, .getting-started, .getting-started__wrapper {
+    background: transparent;
+} // background set to transparent
+
+.column-link__badge, .column-subheading {
+    font-size: 12px;
+    font-weight: 500;
+    background: transparent;
+} // 'settings' column set to transparent
+
+.getting-started .column-link {
+    /* background: #17131a; */
+    background: transparent;
+    color: #fff;
+} // column set to transparent
+
+.getting-started__footer p {
+    color: #6c989e;
+    font-size: 13px;
+    margin-bottom: 20px;
+} // mastodon intro line in footer turn to blue
+
+.getting-started .column-link:hover {
+    background: rgba(0,0,0,0.7);
+    border: 2px solid #c5c663;
+    color: white;
+    text-shadow: 0 0 10px #b5c8ab, 0 0 20px #b5c8ab, 0 0 30px #b5c8ab, 0 0 40px #b5c8ab;
+    box-shadow: 0px 0px 10px #b5c8ab;
+} // hover
+
+/* search */
+.drawer__inner.darker {
+    background: transparent;
+} // set background to transparent
+
+.columns-area--mobile .search__input {
+    line-height: 18px;
+    font-size: 16px;
+    padding: 15px 30px 15px 15px;
+    border: 2px solid #c5c663;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px #b5c8ab;
+} // search box
+
+.search__input:focus {
+    border: 2px dotted #c5c663;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px #b5c8ab;
+}// search box when focus
+
+.search-results__header {
+    background: transparent;
+} // 'x result' column set to transparent
+
+.search-results__section h5 {
+    background: transparent;
+    color: #c0bf71;
+} // change color of result sections
