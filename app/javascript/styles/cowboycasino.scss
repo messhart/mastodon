@@ -1,4 +1,4 @@
-$ui-base-color: #3b2c53; // darkest
+$ui-base-color: #0a080b; // darkest
 $ui-highlight-color: #6995a3; // vibrant
 $ui-secondary-color: #b9b9ba; // lightest
 $ui-primary-color: #b9b9ba; // lighter
@@ -68,7 +68,7 @@ $about-page-text: lighten($ui-base-color, 50%);
 }
 
 .landing-page.alternative .header {
-    background-image:url('../images/cowboycasino/navi.png');
+    background-image:url('../images/cowboycasino/src.jpg');
     background-repeat: repeat-x;
     background-size:contain;
     height:45vh;
@@ -272,7 +272,7 @@ $about-page-text: lighten($ui-base-color, 50%);
 }
 
 body, .landing-page, .public-layout {
-  background-image: url("../images/cowboycasino/src.png");
+  background-image: url("../images/cowboycasino/src.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -325,73 +325,4 @@ body, .landing-page, .public-layout {
     min-height: 30px;
     max-height: 200px;
     background: #88aea4;
-}
-
-/* my edition */
-
-/* text editing */
-.drawer__inner {
-    background: transparent; 
-}
-
-.compose-form .compose-form__modifiers .compose-form__uploads-wrapper {
-    padding: 0px;
-}
-
-.columns-area--mobile .autosuggest-textarea__textarea {
-    border-style: double;
-    background: rgba(42, 59, 60, 0.5);
-    border-color: #5f8e98;
-    border-width: 5px;
-    box-shadow: 0px 0px 5px #bef4ff;
-    color: #ffffff;
-}
-
-.compose-form .compose-form__buttons-wrapper {
-    background: transparent;
-}
-
-.compose-form .spoiler-input__input {
-    /* border-radius: 4px; */
-    background: rgba(95,23,79,0.5);
-    border-style: solid;
-    border-width: 2px;
-    border-color: #a6528e;
-    box-shadow: 0px 0px 5px #ffd3e8;
-    color: #fffd00;
-}
-
-.compose-form .autosuggest-textarea__textarea {
-    min-height: 100px;
-    border-radius: 4px 4px 0 0;
-    padding-bottom: 0;
-    padding-right: 32px;
-    resize: none;
-    border-style: double;
-    background: rgba(42, 59, 60, 1);
-    border-color: #5f8e98;
-    border-width: 5px;
-    box-shadow: 0px 0px 5px #bef4ff;
-    color: #ffffff;
-    overflow-y: hidden;
-}
-
-/* notifications */
-.muted .status__content a, .muted .status__content p, .muted .status__display-name strong {
-    color: #ae97d1;
-}
-
-/* timeline */
-.load-gap {
-    border-bottom: 1px dashed #c2c45f;
-    /* box-shadow: 0px 0px 3px #eaebaf; */
-}
-
-.status {
-    border-bottom: 1px dashed #c2c45f;
-}
-
-/* search */
-.drawer__inner.darker {
-    background: transparent;
 }
