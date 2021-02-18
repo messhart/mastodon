@@ -326,3 +326,137 @@ body, .landing-page, .public-layout {
     max-height: 200px;
     background: #88aea4;
 }
+
+/* my edition */
+
+/* tabs bar */
+.tabs-bar {
+    background: #0a080b;
+    border-style: solid;
+    border-color: #5f8e98;
+    border-width: 2px;
+    box-shadow: 0px 0px 10px #bef4ff;
+} // make tabs bar background invisible && glowing edges
+
+.tabs-bar__wrapper {
+    background: transparent;
+} // make tabs bar background invisible
+
+@media screen and (min-width: 631px)
+.tabs-bar__link:active, .tabs-bar__link:focus, .tabs-bar__link:hover {
+    background: transparent;
+}
+
+.tabs-bar__link.active {
+    text-shadow: 0 0 10px #bef4ff, 0 0 20px #bef4ff, 0 0 30px #bef4ff, 0 0 40px #bef4ff;
+} // text glow when chosen 
+
+/* timeline */
+.load-gap {
+    border: 2px dotted #c0c26e;
+    box-shadow: 0 0 2px #fdff9e;
+    color: #ffffff;
+    text-shadow: 0 0 10px #fdff9e, 0 0 20px #fdff9e;
+} // load gap yellow dot
+
+.status {
+    border-bottom: 2px dotted #c0c26e;
+} // load gap yellow dot
+
+.status__display-name {
+    color: #b45085;
+    text-decoration: none;
+} // lighten display name
+
+.status__content a, .status__content a.unhandled-link {
+    color: #88aea4;
+    text-shadow: 0 0 5px #6a6a6a, 0 0 7px #b6ded3;
+} // href glow gray
+
+/* floating action button */
+.floating-action-button {
+    background: #0a080b;
+    border-style: solid;
+    border-color: #5f8e98;
+    border-width: 2px;
+    box-shadow: 2px 3px 9px rgb(0 0 0 / 40%), 0px 0px 10px #bef4ff;
+}
+
+.floating-action-button:active, .floating-action-button:focus, .floating-action-button:hover {
+    background: #0a080b;
+    border-style: solid;
+    border-color: #c5c35f;
+    border-width: 2px;
+    box-shadow: 2px 3px 9px rgb(0 0 0 / 40%), 0px 0px 10px #f0ee75;
+}
+
+/* notifications */
+.muted .status__content a, .muted .status__content p, .muted .status__display-name strong {
+    color: #819cae;
+} // notifications content color
+
+/* status page */
+.detailed-status {
+    background: transparent;
+    border-bottom: 2px dotted #6a9aa3;
+} // set background to none & add blue dotted line
+
+.detailed-status__action-bar {
+    background: rgba(0, 0, 0, 0.3);
+} // set action bar to darker shade of black
+
+/* toot editing page */
+.drawer__inner {
+    background: transparent;
+} // background set to transparent
+
+.compose-form .autosuggest-textarea__textarea {
+    min-height: 100px;
+    border-radius: 4px 4px 0 0;
+    padding-bottom: 20px;
+    padding-right: 32px;
+    border-top: 2px dotted #6a9aa3;
+    border-left: 2px dotted #fdff9e;
+    border-right: 2px dotted #b36da6;
+    background: rgba(0,0,0,0.7);
+} // colorful border 1
+
+.compose-form .compose-form__buttons-wrapper {
+    padding: 10px;
+    background: rgba(0, 0, 0,0.5);
+    border-bottom: 2px dotted #ac3f49;
+    border-left: 2px dotted #fdff9e;
+    border-right: 2px dotted #b36da6;
+    border-radius: 0 0 4px 4px;
+    display: flex;
+    justify-content: space-between;
+    flex: 0 0 auto;
+} // colorful border 2
+
+.compose-form .autosuggest-textarea__textarea, .compose-form .spoiler-input__input {
+    color: white;
+} // change editing color to white
+
+.character-counter {
+    color: #bab4ab;
+} // change char counter color
+
+.compose-form .compose-form__modifiers {
+    color: #0a080b;
+    background: rgba(35,26,39,0.7);
+    border-left: 2px dotted #fdff9e;
+    border-right: 2px dotted #b36da6;
+} // poll background
+
+.poll__option input[type=text] {
+    color: #c8cdbd;
+    background: rgba(0,0,0,0.6);
+    border: 1px dashed #7263a2;
+} // poll input background
+
+.compose-form .autosuggest-textarea__textarea, .compose-form .spoiler-input__input {
+    margin: 0;
+    color: white;
+    background: rgba(0,0,0,0.7);
+    border: 2px dotted #ac3f49;
+} // cw
