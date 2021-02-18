@@ -376,6 +376,10 @@ body, .landing-page, .public-layout {
     text-shadow: 0 0 5px #6a6a6a, 0 0 7px #b6ded3;
 } // href glow gray
 
+.reply-indicator__content p, .status__content p {
+    color: white;
+} // change content color to white
+
 /* floating action button */
 .floating-action-button {
     background: #0a080b;
@@ -466,6 +470,10 @@ body, .landing-page, .public-layout {
     color: white;
     background: rgba(0,0,0,0.7);
 } // cw
+
+.compose-panel .compose-form__autosuggest-wrapper {
+    background-color: transparent;
+} // clear white background in PC
 
 /* avatar */
 a .account__avatar {
@@ -560,3 +568,7 @@ a .account__avatar {
     background: transparent;
     color: #c0bf71;
 } // change color of result sections
+
+.trends__header {
+    background: rgba(0,0,0, 0.5);
+} // change trands header to half transparent
