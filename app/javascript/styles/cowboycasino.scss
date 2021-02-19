@@ -397,9 +397,12 @@ body, .landing-page, .public-layout {
 } // lighten display name
 
 .status__content a, .status__content a.unhandled-link {
-    color: #88aea4;
-    text-shadow: 0 0 5px #6a6a6a, 0 0 7px #b6ded3;
-} // href glow gray
+    border-bottom: 2px dotted #64c2bd;
+} // underline link
+
+.reply-indicator__content a.unhandled-link, .status__content a.unhandled-link {
+    color: #b9b9ba;
+} // link color -> gray
 
 .reply-indicator__content p, .status__content p {
     color: white;
