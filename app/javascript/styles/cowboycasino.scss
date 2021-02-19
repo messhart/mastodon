@@ -398,11 +398,8 @@ body, .landing-page, .public-layout {
 
 .status__content a, .status__content a.unhandled-link {
     border-bottom: 2px dotted #64c2bd;
-} // underline link
-
-.reply-indicator__content a.unhandled-link, .status__content a.unhandled-link {
-    color: #b9b9ba;
-} // link color -> gray
+    color: #809978;
+} // underline link & change link color
 
 .reply-indicator__content p, .status__content p {
     color: white;
