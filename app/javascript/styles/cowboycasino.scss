@@ -354,6 +354,31 @@ body, .landing-page, .public-layout {
     text-shadow: 0 0 10px #bef4ff, 0 0 20px #bef4ff, 0 0 30px #bef4ff, 0 0 40px #bef4ff;
 } // text glow when chosen 
 
+/* column header */
+.column-header {
+    background: black;
+    border: 2px solid #5647a6;
+    box-shadow: 0px 0px 10px #bfb8ea;
+} // black background && glowing edges
+
+.column-header__button {
+    background: black;
+    border: 0;
+    color: #615486;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0 15px;
+} // button black background && change button color to purple
+
+.column-header.active .column-header__icon {
+    color: white;
+} // change header icon color to white
+
+.column-header__back-button {
+    background: black;
+    color: #615486;
+} // back button background set to black && button color -> purple
+
 /* timeline */
 .load-gap {
     border: 2px dotted #c0c26e;
@@ -475,7 +500,29 @@ body, .landing-page, .public-layout {
     background-color: transparent;
 } // clear white background in PC
 
+.reply-indicator {
+    min-height: 30px;
+    max-height: 200px;
+    background: rgba(0, 0, 0, 0.7);
+    border-right: 1px dashed #fdff9e;
+    border-left: 1px dashed #b36da6;
+    border-top: 1px dashed #ac3f49;
+    border-bottom: 1px dashed #6a9aa3;
+} // reply indicator input area setting
+
+.columns-area__panels {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+} // reply indicator id color -> pink
+
 /* avatar */
+.column-back-button {
+    background: rgba(0,0,0,0.7);
+} // back button set to half transparent
+
 a .account__avatar {
     cursor: pointer;
     border-left: 2px dashed #fdff9e;
@@ -483,6 +530,14 @@ a .account__avatar {
     border-bottom: 2px dashed #ac3f49;
     border-top: 2px dashed #6a9aa3;
 } // colorful avatar border
+
+.account__header__bar .avatar .account__avatar {
+    background-color: rgba(0,0,0,0);
+    border-left: 5px double #fdff9e;
+    border-right: 5px double #b36da6;
+    border-bottom: 5px double #ac3f49;
+    border-top: 5px double #6a9aa3;
+} // header in avatar
 
 .account__header__image {
     overflow: hidden;
@@ -507,6 +562,10 @@ a .account__avatar {
     border-bottom: 1px dashed #618f97;
 } // blue dashed line inside the table
 
+.account__header__account-note {
+    border-bottom: 0px;
+} // cancel account note border
+
 /* getting started */
 .flex-spacer, .getting-started, .getting-started__wrapper {
     background: transparent;
@@ -519,16 +578,9 @@ a .account__avatar {
 } // 'settings' column set to transparent
 
 .getting-started .column-link {
-    /* background: #17131a; */
     background: transparent;
     color: #fff;
 } // column set to transparent
-
-.getting-started__footer p {
-    color: #6c989e;
-    font-size: 13px;
-    margin-bottom: 20px;
-} // mastodon intro line in footer turn to blue
 
 .getting-started .column-link:hover {
     background: rgba(0,0,0,0.7);
@@ -553,6 +605,13 @@ a .account__avatar {
     box-shadow: 0px 0px 10px #b5c8ab;
 } // search box
 
+.search__input {
+    color: #ffffff;
+    border: 2px solid #c5c663;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px #b5c8ab;
+} // search box in PC
+
 .search__input:focus {
     border: 2px dotted #c5c663;
     color: white;
@@ -572,3 +631,24 @@ a .account__avatar {
 .trends__header {
     background: rgba(0,0,0, 0.5);
 } // change trands header to half transparent
+
+
+/* DM */
+.conversation--unread {
+    background: rgba(59,59,84,0.4);
+} // highlight unread DMs
+
+/* lists */
+.empty-column-indicator, .error-column, .follow_requests-unlocked_explanation {
+    background: transparent;
+} // change background to transparent
+
+.column-inline-form {
+    background: rgba(0,0,0,0.7);
+} // change search box background to transparent
+
+.setting-text {
+    color: white;
+    background: transparent;
+    border: 1px dashed #c3ca65;
+} // search box setting
