@@ -1,4 +1,5 @@
 default: styles/application.scss
 contrast: styles/contrast.scss
 mastodon-light: styles/mastodon-light.scss
-cowboycasino: styles/cowboycasino.scss
+CowboyCasino: styles/cowboycasino.scss
+Erebor: styles/erebor.scss
