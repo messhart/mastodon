@@ -560,6 +560,17 @@ body, .landing-page, .public-layout {
   display: none;
 } // not displaying mascot image
 
+.compose-form .compose-form__warning {
+  color: darkorange;
+  background: transparent;
+} // compose-form warning background & text color modification
+
+.compose-form .compose-form__warning a {
+  color: burlywood;
+  font-weight: 500;
+  text-decoration: underline;
+} // 'learn more' color
+
 /* avatar */
 .column-back-button {
     background: black;
