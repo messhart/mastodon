@@ -737,6 +737,10 @@ a .account__avatar {
     background: rgba(58, 48, 76, 0.3);
 } // list column link background -> half-transparent purple
 
+.column-link:active, .column-link:focus, .column-link:hover {
+    background: rgba(65,54,85,0.3);
+} // list column link background hover
+
 /* fo request */
 .account--panel {
     background: rgba(0, 0, 0, 0.2);
