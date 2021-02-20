@@ -636,7 +636,7 @@ a .account__avatar {
 } // little triangle in headline -> pink
 
 .account__section-headline, .notification__filter-bar {
-    background: #1d1826;
+    background: rgba(0,0,0,0.4);
     border-bottom: 1px dashed #a0578d;
     cursor: default;
     display: flex;
