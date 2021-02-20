@@ -556,6 +556,10 @@ body, .landing-page, .public-layout {
     background: #0d0a0e;
 } // scrollbar
 
+.drawer__inner__mastodon {
+  display: none;
+} // not displaying mascot image
+
 /* avatar */
 .column-back-button {
     background: black;
