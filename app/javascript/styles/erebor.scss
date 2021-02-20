@@ -1,9 +1,9 @@
-$ui-base-color: #1a0116; // darkest
-$ui-highlight-color: #a1b41a; // vibrant
-$ui-secondary-color: #b9b9ba; // lightest
+$ui-base-color: #17464e; // darkest
+$ui-highlight-color: #8eb9c0; // vibrant
+$ui-secondary-color: #c8f7ff; // lightest
 $ui-primary-color: #b9b9ba; // lighter
-$ui-primary-color-alt: #576850; // darker, for external pages
-$ui-link-text-color: #996633;
+$ui-primary-color-alt: #6a9aa6; // darker, for external pages
+$ui-link-text-color: #586b57;
 
 $about-page-text: lighten($ui-base-color, 50%);
 
@@ -319,4 +319,8 @@ body, .landing-page, .public-layout {
 
 .account__section-headline {
   background-color: rgba(17,17,17,1);
+}
+
+.drawer__inner {
+    background: transparent;
 }
