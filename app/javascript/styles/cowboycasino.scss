@@ -391,6 +391,10 @@ body, .landing-page, .public-layout {
     border-bottom: 2px dotted #c0c26e;
 } // load gap yellow dot
 
+.load-more:hover {
+    background: rgba(255,255,255, 0.1);
+} // load gap hover
+
 .status__display-name {
     color: #b45085;
     text-decoration: none;
@@ -426,6 +430,10 @@ body, .landing-page, .public-layout {
 .muted .status__content a, .muted .status__content p, .muted .status__display-name strong {
     color: #819cae;
 } // notifications content color
+
+.account__section-headline button, .notification__filter-bar button {
+    background: rgba(0,0,0,0.7);
+} // filter bar color -> transparent
 
 /* single status page */
 .detailed-status {
@@ -543,6 +551,10 @@ body, .landing-page, .public-layout {
     font-weight: 500;
     color: #577f79;
 } // reply indicator display name color -> dark green
+
+::-webkit-scrollbar-thumb {
+    background: #0d0a0e;
+} // scrollbar
 
 /* avatar */
 .column-back-button {
@@ -720,3 +732,10 @@ a .account__avatar {
 .column-link {
     background: rgba(58, 48, 76, 0.3);
 } // list column link background -> half-transparent purple
+
+/* fo request */
+.account--panel {
+    background: rgba(0, 0, 0, 0.2);
+    border-top: 1px dashed #898e2f;
+    border-bottom: 1px dashed #898e2f;
+} // fo request check buttons background -> transparent, border -> yellow
